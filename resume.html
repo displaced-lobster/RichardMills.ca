@@ -1,0 +1,44 @@
+---
+layout: layout.liquid
+title: Resume
+anchor: resume
+---
+
+<h4 class="resume-header">Work Experience</h4>
+{%- for job in collections.job reversed -%}
+    <article>
+    <h5><strong>{{ job.data.title }}</strong></h5>
+    <div><strong>{{ job.data.employer }}</strong></div>
+    <div class="row text-grey">
+        <em>
+            <div class="six columns">{{ job.data.start }} - {{ job.data.end }}</div>
+            <div class="six columns text-right">{{ job.data.location }}</div>
+        </em>
+    </div>
+    <div>{{ job.templateContent }}</div>
+    </article>
+{%- endfor -%}
+
+<h4 class="resume-header">Achievements</h4>
+<article>
+<ul>
+    <li>Selected and sponsored by MacEwan University to attend European Innovation Academy, Portugal 2019.</li>
+    <li>Competed in Big Data Challenge 2019 Calgary and was awarded the analytical talent and communication awards.</li>
+    <li>Completed the Stanford University Machine Learning course on Coursera.</li>
+</ul>
+</article>
+
+<h4 class="resume-header">Education</h4>
+{%- for school in collections.school reversed -%}
+    <article>
+    <h5><strong>{{ school.data.title }}</strong></h5>
+    <div><strong>{{ school.data.school }}</strong></div>
+    <div class="row text-grey">
+        <em>
+            <div class="six columns">{{ school.data.start}} - {{school.data.end }}</div>
+            <div class="six columns text-right">{{ school.data.location }}</div>
+        </em>
+    </div>
+    <div>{{ school.templateContent }}</div>
+    </article>
+{% endfor %}

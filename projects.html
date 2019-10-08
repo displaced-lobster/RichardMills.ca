@@ -1,0 +1,14 @@
+---
+layout: layout.liquid
+title: Projects
+anchor: projects
+---
+
+{%- for project in collections.project -%}
+    <a href="{{ project.data.link }}" class="project-link" target="_blank">
+        <h5><strong>
+            {{ project.data.title }}
+        </strong></h5>
+    </a>
+    <article>{{ project.templateContent }}</article>
+{%- endfor -%}

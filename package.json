@@ -1,0 +1,13 @@
+{
+  "name": "richardmills.ca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  },
+  "scripts": {
+      "build": "npx @11ty/eleventy",
+      "serve": "npx @11ty/eleventy --serve"
+  }
+}
