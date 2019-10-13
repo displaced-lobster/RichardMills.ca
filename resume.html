@@ -1,11 +1,11 @@
 ---
-layout: layout.liquid
+layout: layout.njk
 title: Resume
 anchor: resume
 ---
 
 <h4 class="resume-header">Work Experience</h4>
-{%- for job in collections.job reversed -%}
+{% for job in collections.job reversed %}
     <article>
     <h5><strong>{{ job.data.title }}</strong></h5>
     <div><strong>{{ job.data.employer }}</strong></div>
@@ -17,7 +17,7 @@ anchor: resume
     </div>
     <div>{{ job.templateContent }}</div>
     </article>
-{%- endfor -%}
+{% endfor %}
 
 <h4 class="resume-header">Achievements</h4>
 <article>
@@ -29,7 +29,7 @@ anchor: resume
 </article>
 
 <h4 class="resume-header">Education</h4>
-{%- for school in collections.school reversed -%}
+{% for school in collections.school reversed %}
     <article>
     <h5><strong>{{ school.data.title }}</strong></h5>
     <div><strong>{{ school.data.school }}</strong></div>
