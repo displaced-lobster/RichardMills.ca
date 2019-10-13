@@ -1,11 +1,13 @@
 {
   "name": "richardmills.ca",
+  "author": "Richard Mills",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
-    "clean-css": "^4.2.1"
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0"
   },
   "scripts": {
     "build": "npx @11ty/eleventy",
