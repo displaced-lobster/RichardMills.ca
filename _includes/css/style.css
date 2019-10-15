@@ -18,6 +18,19 @@ nav {
 
 article { margin-bottom: 6rem; }
 
+footer {
+    background-color: #333;
+    color: #666;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+footer > a {
+    color: #666;
+    padding: 0.5em;
+}
+
 .project-link { text-decoration: none; }
 
 .resume-header { border-bottom: 1px solid #aaa; }

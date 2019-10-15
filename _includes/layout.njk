@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>RichardMills.ca</title>
+    <meta name="My personal website." content="">
+    <meta name="Richard Mills" content="">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>RichardMills.ca</title>
-  <meta name="My personal website." content="">
-  <meta name="Richard Mills" content="">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {% set css %}
+        {% include "css/normalize.css" %}
+        {% include "css/skeleton.css" %}
+        {% include "css/style.css" %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {% set css %}
-    {% include "css/normalize.css" %}
-    {% include "css/skeleton.css" %}
-    {% include "css/style.css" %}
-  {% endset %}
-
-  <style>{{ css | cssmin | safe }}</style>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
+        <header class="text-center">
+            <img src="/images/profile_200x200.png" />
+            <h1>Richard <strong>Mills</strong></h1>
+            <h5>Computer Science Student</h5>
+        </header>
 
-    <header class="text-center">
-        <img src="/images/profile_200x200.png" />
-        <h1>Richard <strong>Mills</strong></h1>
-        <h5>Computer Science Student</h5>
-    </header>
+        <nav id="nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/#nav" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/projects#nav" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="/resume#nav" class="nav-link">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav id="nav">
-        <div class="container">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="/#nav" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="/projects#nav" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="/resume#nav" class="nav-link">Resume</a></li>
-            </ul>
+        <div class="content">
+            <h2>{{ title | safe }}</h2>
+            {{ content | safe }}
         </div>
-    </nav>
-    <div class="content">
-        <h2>{{ title | safe }}</h2>
-        {{ content | safe }}
+
+        <footer>
+            <a href="https://linkedin.com/in/rchrdmlls/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/scripts-richard"><i class="fab fa-github-square"></i></a>
+            <a href="mailto: rchrdmlls@gmail.com"><i class="fas fa-envelope-square"></i></a>
+        </footer>
+        <script src="https://kit.fontawesome.com/227cd93e8f.js" crossorigin="anonymous"></script>
     </div>
-
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
