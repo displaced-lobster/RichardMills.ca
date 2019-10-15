@@ -31,6 +31,17 @@ footer > a {
     padding: 0.5em;
 }
 
+.credits {
+    font-size: 0.4em;
+    padding: 0;
+    margin: 0;
+    margin-top: 2em;
+}
+
+.credits > p { margin: 0; }
+
+.credits > p > a { color: #666; }
+
 .project-link { text-decoration: none; }
 
 .resume-header { border-bottom: 1px solid #aaa; }
