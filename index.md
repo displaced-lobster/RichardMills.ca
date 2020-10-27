@@ -4,15 +4,7 @@ title: About Me
 anchor: about
 ---
 
-I am currently a 4<sup>th</sup> year computer science student at MacEwan University and will be completing my studies in December 2019. I have project management experience and passion that I believe could benefit a potential employer.
+I am a software developer working for a [QuoteToMe](quotetome.com), an Edmonton based start-up. During the day, I develop in Python and VueJS working both backends and frontends to grow an ever-increasing feature-set to meet the demands of construction purchasing. During the night, I dabble in Rust, Go, more VueJS, and more Python, and whatever else suits my fancy at any given time. Between bouts of coding, I enjoy rock climbing, mountain biking, and 3D printing. I enjoy creating, developing, problem solving, and kicking butt with a great team of people.
 
-I am a former Oil Sands engineer making a career change to software development.
-I have chosen to make this career change because I have a deep interest in computer science and would like to bring this passion to my work and to benefit my employer.
-Computer science provides me the skills and knowledge to do what I love, while my engineering and project management experience gives me the required communication and problem solving skills to be successful in this position.
-Software development allows me to design and build elegant solutions to challenging problems.
-I have a love for building and designing and I have completed numerous extracurricular projects in a variety of programming languages.
-I can bring experience in building full stack projects to an employer. I am in the early stages of developing a web app to allow users with acne to track their outbreaks; my largest personal project to date.
-My personal project, <a href="aperioapp.com">Aperioapp.com</a> is currently in a data collection stage with future plans to implement analysis of user's skin history to attempt to identify potential outbreak triggers.
-I am eager to apply my experience in working with your company.
+I started work at QuoteToMe January 2020 and it has been a wild ride ever since. Since I have started, we have released a new web app and a mobile app. We have developed a great set of internal tools as well as increased our application features to an ever-increasing number of customers. Working for a start-up has been a dream of mine and it has not disappointed.
 
-I am available to interview for a position and look forward to hearing from you. Thank you for your consideration.
